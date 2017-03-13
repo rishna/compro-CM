@@ -38,24 +38,27 @@ a:hover {
     background-color: #00AEEF;
 }
 
+.navbar {
+    background-color: #00AEEF;
+}
 
 ul.nav li.current {
-  color: #00AEEF;
+  color: #000000;
 }
 
 .navbar .nav > li > a:hover,
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:active,
 .navbar .nav > li.active > a {
-    color: #00AEEF !important;
+    color: #000000 !important;
 }
 
 .sy-pager li.sy-active a {
-  background-color: #00AEEF;
+  background-color: #000000;
 }
 
 .navbar .nav > li > a:hover {
-  color: #00AEEF;
+  color: #000000;
 }
 
 input:focus {
@@ -85,15 +88,15 @@ input[type="color"]:focus,
 /* tab */
 
 .nav-tabs > a {
-	color:#00AEEF;
+	color:#000000;
 }
 
 
 /* accordion */
 .accordion-heading a:hover {
-	color: #00AEEF;
+	color: #000000;
 }
 .accordion-heading .active{
-	color: #00AEEF;
+	color: #000000;
 }
 
