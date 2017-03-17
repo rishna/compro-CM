@@ -765,130 +765,78 @@ ul.the-icons {
     opacity:0.2    
 }
 
-/* Happy Clients
+/* Float Elements 
 ---------------------------------*/
-#client_outer{
-    
-	padding:0px 0px;
-	}
-	
-.client_area{
-    
-	 width:960px;
-	margin:-0px auto;
+.fl-lt {float:left;}
+.fl-rt {float:right;}
+
+/* Clear Floated Elements
+---------------------------------*/
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
 }
 
-.client_section{
-	padding:40px 0 0 0;
-	}
-	
-.client_section.btm{
-	padding:20px 0 0 0;
-	}
+.clearfix:before,
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
 
+.clearfix:after {
+  clear: both;
+}
+ul{ list-style:none;}
 
-.client_profile{
-    margin-left:-150px;
-	float:left;
-	text-align:center;
-	}
-	
-.client_profile.flt{
-    margin-right: 190px;
-	float:right;
-	}
-	
-.client_profile_pic{
-	border-radius:60%;
-	border:2px solid #f5f5f5;
-	margin:-10 0 60px 0;
-	width:236px;
-	height:239px;
-	}
-	
-.client_profile_pic img{
-	border-radius:60%;
-	border:3px solid #f5f5f5;
-	}
-	
-.client_profile h3{
-    margin-top: 30px;
-	font-size:18px;
-	color:#49b5e7;
-	margin:10 0 0 0;
-	}
-	
-.client_profile span{
+.figure{ margin:0px;}
 
-	display:block;
-    margin-top: 10px;
-	font-size:16px;
-    font-weight: 500;
-	color:#888888;
-	}
-	
-.quote_section{
-	width:648px;
-	background:#f9f9f9;
-	position:relative;
-	padding:40px 30px;
-	float:left;
-   	margin:35px 0 0 30px;
-	}
-	
-.quote_section.flt{
-    margin:35px 0 0 -150px;
-	float:inherit;
-	}
-	
-.quote_section p{
-	font-family: 'Lato',sans-serif;
-	font-style: italic;
-	font-size:18px;
-	font-weight: 300;
-	color:#888888;
-	text-align:center;
-	position:relative;
-	
-	}
-	
-.quote_section p b{
-    display: inline-block;
-    font-size: 22px;
-    left: -9px;
-    position: relative;
-    top: -8px;
-	}
-	
-.quote_section p small{
-	display: inline-block;
-	right: -9px;
-    position: relative;
-    top:4px;
-	}
-	
-.quote_arrow{
-	position:absolute;
-	background:url(../img/quote_arrow.png) no-repeat left top;
-	width:23px;
-	height:25px;
-	left:-22px; 
-	top:50%;
-	margin-top:-15.5px;
-	}
-	
-.quote_arrow2{
-	background:url(../img/quote_arrow2.png) no-repeat right top;
-	position:absolute;
-	width:23px;
-	height:25px;
-	right:-22px; 
-	top:50%;
-	margin-top:-15.5px;
-	}
+img{ max-width:100%;}
 
+a, a:hover, a:active{ outline:0px !important}
 
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.1.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+    font-family: 'LatoRegular';
+    src: url('../fonts/lato-regular.eot');
+    src: url('../fonts/lato-regular.eot') format('embedded-opentype'),
+         url('../fonts/lato-regular.woff2') format('woff2'),
+         url('../fonts/lato-regular.woff') format('woff'),
+         url('../fonts/lato-regular.ttf') format('truetype'),
+         url('../fonts/lato-regular.svg#LatoRegular') format('svg');
+}
+@font-face {
+    font-family: 'LatoBoldBold';
+    src: url('../fonts/lato-bold.eot');
+    src: url('../fonts/lato-bold.eot') format('embedded-opentype'),
+         url('../fonts/lato-bold.woff2') format('woff2'),
+         url('../fonts/lato-bold.woff') format('woff'),
+         url('../fonts/lato-bold.ttf') format('truetype'),
+         url('../fonts/lato-bold.svg#LatoBoldBold') format('svg');
+}
+@font-face {
+    font-family: 'DosisBold';
+    src: url('../fonts/dosis-bold.eot');
+    src: url('../fonts/dosis-bold.eot') format('embedded-opentype'),
+         url('../fonts/dosis-bold.woff2') format('woff2'),
+         url('../fonts/dosis-bold.woff') format('woff'),
+         url('../fonts/dosis-bold.ttf') format('truetype'),
+         url('../fonts/dosis-bold.svg#DosisBold') format('svg');
+}
 
 /* ============== contact ==================== */
 .validation {
@@ -1048,7 +996,7 @@ div.cform-response-output {
 footer{
 	float:left;
 	width:100%;
-	background:#212121;
+	background:#00AEEF;
 	color:#fff;
 	margin:0;
 	padding:40px 0 0 0;
@@ -1327,3 +1275,117 @@ a.socialIcon:hover, .socialHoverClass {
 		margin-bottom: 30px;
 	}
 }
+
+/* Happy Clients
+---------------------------------*/
+#client_outer{
+	padding:0px 0px;
+	}
+	
+.client_area{
+	 width:960px;
+	margin:0px auto;
+}
+
+.client_section{
+	padding:35px 0 0 0;
+	}
+	
+.client_section.btm{
+	padding:20px 0 0 0;
+	}
+
+
+.client_profile{
+	float:left;
+	text-align:center;
+	}
+	
+.client_profile.flt{
+	float:right;
+	}
+	
+.client_profile_pic{
+	border-radius:50%;
+	border:2px solid #f5f5f5;
+	margin:0 0 15px 0;
+	width:220px;
+	height:220px;
+	}
+	
+.client_profile_pic img{
+	border-radius:50%;
+	border:3px solid #f5f5f5;
+	}
+	
+.client_profile h3{
+	font-size:18px;
+	color:#49b5e7;
+	margin:0 0 0 0;
+	}
+	
+.client_profile span{
+
+	display:block;
+	font-size:16px;
+	color:#888888;
+	}
+	
+.quote_section{
+	width:648px;
+	background:#f9f9f9;
+	position:relative;
+	padding:40px 30px;
+	float:left;
+	margin:35px 0 0 30px;
+	}
+	
+.quote_section.flt{
+	float:left;
+	}
+	
+.quote_section p{
+	font-family: 'Lato',sans-serif;
+	font-style: italic;
+	font-size:18px;
+	font-weight: 300;
+	color:#888888;
+	text-align:center;
+	position:relative;
+	
+	}
+	
+.quote_section p b{
+    display: inline-block;
+    font-size: 22px;
+    left: -9px;
+    position: relative;
+    top: -8px;
+	}
+	
+.quote_section p small{
+	display: inline-block;
+	right: -9px;
+    position: relative;
+    top:4px;
+	}
+	
+.quote_arrow{
+	position:absolute;
+	background:url(../img/quote_arrow.png) no-repeat left top;
+	width:23px;
+	height:25px;
+	left:-22px; 
+	top:50%;
+	margin-top:-15.5px;
+	}
+	
+.quote_arrow2{
+	background:url(../img/quote_arrow2.png) no-repeat right top;
+	position:absolute;
+	width:23px;
+	height:25px;
+	right:-22px; 
+	top:50%;
+	margin-top:-15.5px;
+	}
